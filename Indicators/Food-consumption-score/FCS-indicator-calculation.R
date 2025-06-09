@@ -113,7 +113,7 @@ basicStats(data$FCSCond, ci=0.95)
 plot(density(data$FCSCond))
 
 # 2.1 Recode above 7 to 7 (only if necessary)
-data$Ncertub[data$FCSStap>7]   <- 7
+data$FCSStap[data$FCSStap>7]   <- 7
 data$FCSPulse[data$FCSPulse>7] <- 7
 data$FCSDairy[data$FCSDairy>7] <- 7
 data$FCSPr[data$FCSPr>7]       <- 7
